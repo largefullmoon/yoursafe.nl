@@ -1,0 +1,123 @@
+html, body, body div {
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  color: black;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  position: relative;
+}
+h1 > span, h2 > span, h3 > span, h4 > span, h5 > span {
+  font-size: inherit;
+}
+
+h1, .h2-big {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: clamp(3.5rem, 6.5vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(2.25rem, 3.5vw, 2.75rem);
+  line-height: clamp(2.75rem, 5vw, 3.5rem);
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 167%;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
+.h3-big {
+  font-size: clamp(3rem, 6vw, 4rem);
+  line-height: clamp(3.5rem, 6.5vw, 5rem);
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5 {
+  margin-block: 3rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+p, ul, ol, th, .text-table, .footer__link {
+  font-size: 1.25rem;
+  line-height: 175%;
+}
+@media (min-width: 992px) {
+  p, ul, ol, th, .text-table, .footer__link {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  position: relative;
+}
+p.intro {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  p.intro {
+    font-size: 1.3rem;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ol {
+  margin-left: 0;
+  padding-left: 1.25rem;
+}
+
+small {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code, kbd, pre, samp {
+  font-size: inherit;
+  font-family: "Courier Prime", monospace;
+  color: var(--bs-body-color);
+}
+
+.stroke {
+  stroke: black;
+  fill: transparent;
+}
+
+.list--check li {
+  background-image: url("../images.v2/check-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position-y: 2px;
+  padding-left: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.list--white li {
+  background-image: url("../images.v2/check-icon-white.svg");
+  color: white;
+}
+
+/*# sourceMappingURL=typography.css.map */

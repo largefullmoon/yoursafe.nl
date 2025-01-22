@@ -1,0 +1,204 @@
+
+
+<!doctype html>
+<html id="public-layout" class="  ">
+<head>
+    
+    
+    
+        <meta charset="utf-8">
+        <title>Login to Yoursafe</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+
+        <link rel="stylesheet" href="/account/static/my_bitsafe/css/main.css">
+        
+
+        <link rel="icon" href="/account/static/my_bitsafe/images/yoursafe/favicon.ico">
+        <link rel="manifest" href="/account/static/yoursafe/manifest.json">
+
+        <script src="/account/static/common/js/base.js"></script>
+        <script src="/account/static/common/js/security.js"></script>
+        <script src="/account/static/common/js/x-collapsible.js"></script>
+        <script src="/account/static/common/js/x-dropdown.js"></script>
+        <script src="/account/static/common/js/x-tooltip.js"></script>
+        <script src="/account/static/common/js/x-modal.js"></script>
+        <script src="/account/static/my_bitsafe/js/common.js"></script>
+    
+    <script>FormFieldLocalStorage("my_bitsafe")</script>
+
+
+    <link rel="stylesheet" href="/account/static/flags/sprite-hq.css">
+
+</head>
+<body hx-headers='{"X-CSRFToken": "YPxPMGTEgAnug13DwbBv8C1SpjKJ6nFepRwxEZuoiKxHQa7TcwRRrHhB6Bex232Q"}'>
+    
+    <div class="page-wrapper">
+        <div class="page-header">
+            <div class="page-header-item">
+                
+    <div class="main-logo"><a href="/">Yoursafe</a></div>
+
+            </div>
+            <div class="page-header-item">
+                
+
+
+
+            </div>
+        </div>
+        <div class="page-content">
+            
+
+            
+<h1>Login to Yoursafe</h1>
+    <p class="main-info">
+        
+    
+        Need a Yoursafe account?
+        <a href="https://www.yoursafe.com/en/index.html#signup">Sign up</a>
+    
+
+    </p>
+
+
+            <div class="public-messages">
+                <noscript>
+    <div class="warning-message">
+        <strong>JavaScript required!</strong>
+        &nbsp;
+        We're sorry but Yoursafe doesn't work properly without JavaScript enabled.
+    </div>
+</noscript>
+<script id="browserSupportTemplate" type="text/template">
+    <li class="warning">
+        <span>
+        ${requirement} required <br> We're sorry but Yoursafe doesn't work properly without ${requirement} enabled.
+        </span>
+    </li>
+</script>
+
+                
+            </div>
+
+            
+    
+        <div class="spaced">
+            <div class="filters full-width">
+                
+                <a href="/account/login"
+                class="filter ">QR code Login</a>
+                <a href="/account/email-login"
+                class="filter active">Email Login</a>
+                
+            </div>
+        </div>
+    
+    <script>
+        document.querySelector("body").addEventListener("click", function (evt) {
+            if (evt.target.classList.contains("filter")) {
+                window.handleChangeFilterEvent(evt)
+            }
+        })
+    </script>
+
+    
+    <form id="loginForm" method="post" class="autorefresh-csrf">
+        <input type="hidden" name="csrfmiddlewaretoken" value="YPxPMGTEgAnug13DwbBv8C1SpjKJ6nFepRwxEZuoiKxHQa7TcwRRrHhB6Bex232Q">
+        
+<input type="hidden" name="trusting_token" id="id_trusting_token">
+    
+        <div class="row">
+    <div class="input-field col s12 required" id="id_username_container">
+        <input autocapitalize="none" autocomplete="username" id="id_username" maxlength="80" name="username" type="text" autofocus>
+        <label for="id_username">Email</label>
+        
+    </div>
+</div>
+ 
+
+<div class="row">
+    <div class="input-field col s12 required" id="id_password_container">
+        <input autocomplete="current-password" id="id_password" name="password" type="password">
+        <label for="id_password">Password</label>
+        
+    </div>
+</div>
+
+
+        <input type="hidden" name="next" value="">
+        
+<input type="hidden" name="blackbox" value="">
+<input type="hidden" name="blackbox_status" value="nojs">
+<script src="/account/static/common/js/iovation/config.js"></script>
+<script src="/account/static/common/js/iovation/loader.min.js"></script>
+
+
+        
+            <div>
+                <a href="/account/password-reset">Forgot your password?</a>
+            </div>
+        
+
+        <div class="actions">
+            
+                <button class="btn full-width" type="submit">Log in</button>
+            
+        </div>
+    </form>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        FormFieldLocalStorage.restore("#loginForm", "trusting_token")
+    })
+</script>
+
+
+
+    
+
+    <script>
+        localStorage.setItem('forceLogout', '1');
+    </script>
+
+
+            
+        </div>
+        
+            
+                
+
+<footer class="right-half">
+    <div class="inner">
+        
+            
+        
+
+        All rights reserved — © 2025 Yoursafe. Netherlands
+
+        <br />
+
+        
+            <a target="_blank" href="https://www.yoursafe.com/en/privacy-policy.html">Privacy</a>
+            <span class="separator"></span>
+            <a target="_blank" href="https://www.yoursafe.com/en/terms-and-conditions.html">Terms &amp; conditions</a>
+            <span class="separator"></span>
+            <a target="_blank" href="https://www.yoursafe.com/en/contact-us.html">Contact us</a>
+        
+    </div>
+</footer>
+
+            
+        
+    </div>
+
+
+    
+        <script src="/account/static/materialize/js/materialize.min.js"></script>
+        <script>M.AutoInit(), BitsafeApp.init(), Common.init(), Security()</script>
+    
+    <!-- request_id=Z4vZ7Y6J9QaRb-3eb7aAnwAAMhk -->
+</body>
+</html>

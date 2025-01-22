@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>history.scrollRestoration = "manual"</script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-27367379-23"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-27367379-23');
+    </script>
+
+    <title>Yoursafe - Protecting Your Identity Online</title>
+    <meta name="description"
+        content="Your life evolves organically. Yoursafe protects your money and digital assets without compromising your true identity. Feel free to be who you want to be.">
+    <meta name="viewport" content="width=device-width  initial-scale=1.0">
+    <meta property="og:title" content="Yoursafe - Protecting Your Identity Online">
+    <meta property="og:description"
+        content="Your life evolves organically. Yoursafe protects your money and digital assets without compromising your true identity. Feel free to be who you want to be.">
+    <meta property="og:image" content="https://www.yoursafe.com/images.v2/logo-medium-transparant.png">
+
+    <link rel="shortcut icon" href="../misc/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha384-twcuYPV86B3vvpwNhWJuaLdUSLF9+ttgM2A6M870UYXrOsxKfER2MKox5cirApyA" crossorigin="anonymous">
+
+    <!-- Yoursafe styles -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body class="transactionquestions">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="image image--320 ps-0" src="../images.v2/yoursafe_logo.svg">
+                </a>
+            </div>
+
+            <!-- mobile view -->
+            <div id="mobile-menu">
+                <div class="mobile-menu__hamburger hamburger-show">
+                    <a onmousedown="menuService.openMobileMenu()">
+                        <img class="hamburger-image" src="../images.v2/hamburger-yoursafe.svg">
+                    </a>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="menu-slider">
+                    <!-- CONTROLS -->
+                    <div class="mobile-menu-header">
+                        <div class="mobile-menu-header__back">
+                            <a class="mobile-menu-header__back__text" onmousedown="menuService.menuBackOneLevel()">
+                                <i class="fas fa-chevron-left mobile-menu-header__back__icon"></i>
+                                Back
+                            </a>
+                        </div>
+
+                        <div class="mobile-menu-header__close">
+                            <a onmousedown="menuService.closeMobileMenu()">
+                                <i class="fa-solid fa-x mobile-menu-header__close__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-slider__inner">
+                        <!-- content that should always be visible -->
+                        <div class="menu-slider__centered_content">
+                            <!-- yoursafe logo in bg -->
+                            <img class="mobile-menu-background-image" src="../images.v2/yoursafe-app-icon.svg">
+
+                            <!-- FOOTER -->
+                            <div class="mobile-menu-footer">
+                                <a href="https://accounts.bitsafe.com/account/login">
+                                    <i class="fa fa-user"></i> Sign in
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-menu mobile-menu__level-1">
+                            <!-- menu link items -->
+
+                            <li id="you" class="mobile-menu-item item-id-you main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    You
+                                    <!-- Only add chevron if the item has children -->
+                                    <i class="chevron-align-right fas fa-chevron-right"></i>
+                                </a>
+                                <!-- Render submenu if the item has children -->
+                                <ul class="mobile-menu mobile-menu__level-2">
+                                    <!-- menu link items -->
+
+                                    <li id="you-you" class="mobile-menu-item item-id-you-you ">
+                                        <a href="index.html" aria-current="page" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/YOU-icon.svg">
+                                            YOU
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-ibans" class="mobile-menu-item item-id-you-ibans  ">
+                                        <a href="ibans.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/account-number-icon.svg">
+                                            IBANs
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-yoursafe-app" class="mobile-menu-item item-id-you-yoursafe-app  ">
+                                        <a href="yoursafeapp.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/yoursafe-app-icon.svg">
+                                            Yoursafe App
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-betaalkaart" class="mobile-menu-item item-id-you-betaalkaart  ">
+                                        <a href="betaalkaart.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/debit-card-icon.svg">
+                                            Betaalkaart
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-prijsoverzicht" class="mobile-menu-item item-id-you-prijsoverzicht  ">
+                                        <a href="prijsoverzicht-you.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                            Prijsoverzicht
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="adverteren"
+                                class="mobile-menu-item item-id-adverteren  main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    Adverteren
+                                    <!-- Only add chevron if the item has children -->
+                                    <i class="chevron-align-right fas fa-chevron-right"></i>
+                                </a>
+                                <!-- Render submenu if the item has children -->
+                                <ul class="mobile-menu mobile-menu__level-2">
+                                    <!-- menu link items -->
+
+                                    <li id="adverteren-yoursafe-ads"
+                                        class="mobile-menu-item item-id-adverteren-yoursafe-ads  ">
+                                        <a href="ads.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/yoursafe-ads-icon.svg">
+                                            Yoursafe Ads
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="adverteren-sponsorships"
+                                        class="mobile-menu-item item-id-adverteren-sponsorships  ">
+                                        <a href="sponsorships.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/sponsorships-icon.svg">
+                                            Sponsorships
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="adverteren-prijsoverzicht"
+                                        class="mobile-menu-item item-id-adverteren-prijsoverzicht  ">
+                                        <a href="prijsoverzicht-adverteren.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                            Tariefkaart
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="banken"
+                                class="mobile-menu-item item-id-banken  menu-item--current main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    Banken
+                                    <!-- Only add chevron if the item has children -->
+                                    <i class="chevron-align-right fas fa-chevron-right"></i>
+                                </a>
+                                <!-- Render submenu if the item has children -->
+                                <ul class="mobile-menu mobile-menu__level-2">
+                                    <!-- menu link items -->
+
+                                    <li id="banken-banken" class="mobile-menu-item item-id-banken-banken   ">
+                                        <a href="banken.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/banks-icon.svg">
+                                            Banken
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="banken-transactie-informatie"
+                                        class="mobile-menu-item item-id-banken-transactie-informatie menu-item--current ">
+                                        <a href="transactie-informatie.html" class="menu-item__text">
+                                            <img class="menu-item__icon"
+                                                src="../images.v2/transactions-questions-icon.svg">
+                                            Transactie-informatie
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="over-ons"
+                                class="mobile-menu-item item-id-over-ons  main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    Over Ons
+                                    <!-- Only add chevron if the item has children -->
+
+                                </a>
+                                <!-- Render submenu if the item has children -->
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- desktop view: -->
+
+            <div class="desktop-menu-svg-line&quot;">
+                <svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+                    <defs>
+                        <path id="line"
+                            d="M2 2c49.7 2.6 100 3.1 150 1.7-46.5 2-93 4.4-139.2 7.3 45.2-1.5 90.6-1.8 135.8-.6"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round"
+                            vector-effect="non-scaling-stroke"></path>
+                    </defs>
+                </svg>
+            </div>
+
+            <ul id="desktop-menu" class="menu menu__level-1">
+                <!-- menu link items -->
+
+                <li class="main-menu-item main-menu-item--you item-id-you main-menu-item--without-3rd-level">
+                    <a class="main-menu-item__text">You</a>
+                    <div class="submenu__container">
+                        <div class="submenu__inner">
+                            <ul class="menu__level-2">
+
+                                <li class="menu-item item-id-you-you">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/YOU-icon.svg">
+                                        <a aria-current="page" href="index.html" class="menu-item__text">YOU</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-ibans ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/account-number-icon.svg">
+                                        <a href="ibans.html" class="menu-item__text">IBANs</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-yoursafe-app ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/yoursafe-app-icon.svg">
+                                        <a href="yoursafeapp.html" class="menu-item__text">Yoursafe App</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-betaalkaart ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/debit-card-icon.svg">
+                                        <a href="betaalkaart.html" class="menu-item__text">Betaalkaart</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-prijsoverzicht ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                        <a href="prijsoverzicht-you.html" class="menu-item__text">Prijsoverzicht</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="main-menu-item main-menu-item--adverteren item-id-adverteren  main-menu-item--without-3rd-level">
+                    <a class="main-menu-item__text">Adverteren</a>
+                    <div class="submenu__container">
+                        <div class="submenu__inner">
+                            <ul class="menu__level-2">
+
+                                <li class="menu-item item-id-adverteren-yoursafe-ads ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/yoursafe-ads-icon.svg">
+                                        <a href="ads.html" class="menu-item__text">Yoursafe Ads</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-adverteren-sponsorships ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/sponsorships-icon.svg">
+                                        <a href="sponsorships.html" class="menu-item__text">Sponsorships</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-adverteren-prijsoverzicht ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                        <a href="prijsoverzicht-adverteren.html" class="menu-item__text">Tariefkaart</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="main-menu-item main-menu-item--banken item-id-banken  menu-item--current main-menu-item--without-3rd-level">
+                    <a class="main-menu-item__text">Banken</a>
+                    <div class="submenu__container">
+                        <div class="submenu__inner">
+                            <ul class="menu__level-2">
+
+                                <li class="menu-item item-id-banken-banken">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/banks-icon.svg">
+                                        <a href="banken.html" class="menu-item__text">Banken</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-banken-transactie-informatie menu-item--current">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/transactions-questions-icon.svg">
+                                        <a href="transactie-informatie.html"
+                                            class="menu-item__text">Transactie-informatie</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="main-menu-item main-menu-item--without-submenu main-menu-item--over-ons item-id-over-ons  main-menu-item--without-3rd-level">
+                    <a href="over-ons.html" class="main-menu-item__text">Over Ons</a>
+                </li>
+
+                <!--login menu link item -->
+                <li class="main-menu-item main-menu-item--without-submenu main-menu-item--login">
+                    <a href="https://accounts.bitsafe.com/account/login" target="_blank">
+                        <i class="fa fa-user main-menu-item__text"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="hero hero--no-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col hero__text text--white">
+                    <h1>
+                        Transaction Questions
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="about-us-pink-blob" src="../images.v2/licht-groene-blob-boven.png">
+
+    <div class="block block-tranque">
+        <div class="container container--relative">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4 class="mb-0">
+                        Wordt er een Yoursafe Alias gebruikt in uw transactie?
+                    </h4>
+                    <p class="mb-5">
+                        Als u een Yoursafe Alias Token ziet in het beschrijvingsveld van een transactie, betekent dit
+                        dat de persoon die de transactie initieert (de Yoursafe YOU-klant) een geverifieerde sociale
+                        media-alias als naam gebruikt. Een typisch Yoursafe Alias Token ziet er als volgt uit:
+                        <br>
+                        <span class="text--medium">xxxxxx.yoursafe.id</span>
+                    </p>
+                    <p class="mb-5">
+                        Het Yoursafe Alias Token is een volledig gekwalificeerde domeinnaam, en u kunt deze gebruiken om
+                        niet-persoonlijke informatie over de initiator van de transactie te verkrijgen.
+                    </p>
+                    <h4 class="mb-0">
+                        Hoe toegang te krijgen tot niet-persoonlijke informatie
+                    </h4>
+                    <p>
+                        Om niet-persoonlijke details over de initiator te verkrijgen, bezoekt u eenvoudigweg het
+                        Yoursafe Alias Token via uw webbrowser op:
+                        <br>
+                        <span class="text--medium">https://[xxxxxx.yoursafe.id]</span>
+                    </p>
+                    <p class="mb-5">
+                        Op deze webpagina vindt u niet-persoonlijke informatie die kan omvatten:
+                    </p>
+                    <ul class="q-list">
+                        <li class="mb-5">
+                            Of de initiator 18+ is of niet.
+                        </li>
+                        <li class="mb-5">
+                            De datum waarop de ID van de initiator door Yoursafe is geverifieerd.
+                        </li>
+                        <li class="mb-5">
+                            Wanneer de initiator is gecontroleerd op sanctielijsten.
+                        </li>
+                        <li class="mb-5">
+                            Wanneer de initiator is gecontroleerd op PEP (Politiek Prominente Personen) lijsten.
+                        </li>
+                        <li class="mb-5">
+                            Het land van de locatie van de initiator.
+                        </li>
+                    </ul>
+                    <p>
+                        Deze informatie is vaak voldoende voor ontvangende financiële instellingen om te voldoen aan de
+                        wettelijke vereisten voor sancties en Anti-Witwas (AML) naleving.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <div class="image__wrapper image__wrapper--business-man">
+                        <img class="image" src="../images.v2/yoursafe-website-transactions-questions-foto.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block block-more-info block--padding-low-top">
+        <div class="container container--relative">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="mt-md-0">
+                        Meer informatie nodig?
+                    </h4>
+                    <p>
+                        Als u de Yoursafe Alias Token-pagina al heeft bezocht en verdere details nodig heeft—zoals de
+                        volledige identiteit van de initiator—kunt u een Yoursafe ID Transactie Informatie Verzoek
+                        indienen. Deze optie is exclusief beschikbaar voor ontvangende financiële instellingen.
+                    </p>
+                    <p>
+                        Om deze informatie op te vragen, moet u een Yoursafe ID Transactie Informatie Verzoekformulier
+                        invullen en indienen. Houd er rekening mee dat verzoeken alleen worden verwerkt voor
+                        geverifieerde financiële instellingen. Het formulier is beschikbaar op iedere Yoursafe Alias
+                        Token-pagina.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wave wave--footer">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 order-2 order-md-1">
+                    <ul class="footer__menu">
+                        <li class="footer__item">
+                            <a href="faq.html" target="_blank" class="footer__link text--white">Frequently Asked
+                                Questions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="jobs.html" target="_blank" class="footer__link text--white">Jobs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="terms-and-conditions.html" target="_blank" class="footer__link text--white">Terms
+                                and Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="privacy-policy.html" target="_blank" class="footer__link text--white">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="debitcard-tc.html" target="_blank" class="footer__link text--white">Debit Card
+                                Terms and Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tell-a-friend-tc.html" target="_blank"
+                                class="footer__link text--white">Tell-a-Friend Terms and Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="yoursafe-complaints-procedure.html" target="_blank"
+                                class="footer__link text--white">Yoursafe Complaints Procedure</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="yoursafe-vision col-md-7 mb-5 mb-md-0 order-1 order-md-2 d-md-flex align-items-md-end">
+                    <h3 class="yoursafe-vision__text text--regular text--white text--medium mt-0 mb-0">
+                        <span class="text--blue">Yoursafe's vision is to</span> lead the world's transition to
+                        financial and online inclusion for everyone.
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text--white mt-5">
+                        <small class="mb-2">
+                            Yoursafe is a registered trade name of Yoursafe B.V., an Electronic Money
+                            Institution regulated and supervised by the Dutch Central Bank.
+                        </small>
+                        <small class="text--translucent">
+                            2024 &copy; All rights reserved, Yoursafe - Netherlands.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="../js/back-to-top.js"></script>
+    <!-- todo:: add scrollTo function -->
+    <script src="../js/menu.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

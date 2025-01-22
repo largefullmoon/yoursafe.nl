@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>history.scrollRestoration = "manual"</script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-27367379-23"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-27367379-23');
+    </script>
+
+    <title>Yoursafe - Protecting Your Identity Online</title>
+    <meta name="description"
+        content="Your life evolves organically. Yoursafe protects your money and digital assets without compromising your true identity. Feel free to be who you want to be.">
+    <meta name="viewport" content="width=device-width  initial-scale=1.0">
+    <meta property="og:title" content="Yoursafe - Protecting Your Identity Online">
+    <meta property="og:description"
+        content="Your life evolves organically. Yoursafe protects your money and digital assets without compromising your true identity. Feel free to be who you want to be.">
+    <meta property="og:image" content="https://www.yoursafe.com/images.v2/logo-medium-transparant.png">
+
+    <link rel="shortcut icon" href="../misc/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha384-twcuYPV86B3vvpwNhWJuaLdUSLF9+ttgM2A6M870UYXrOsxKfER2MKox5cirApyA" crossorigin="anonymous">
+
+    <!-- Yoursafe styles -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+<body class="banks">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="image image--320 ps-0" src="../images.v2/yoursafe_logo.svg">
+                </a>
+            </div>
+
+            <!-- mobile view -->
+            <div id="mobile-menu">
+                <div class="mobile-menu__hamburger hamburger-show">
+                    <a onmousedown="menuService.openMobileMenu()">
+                        <img class="hamburger-image" src="../images.v2/hamburger-yoursafe.svg">
+                    </a>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="menu-slider">
+                    <!-- CONTROLS -->
+                    <div class="mobile-menu-header">
+                        <div class="mobile-menu-header__back">
+                            <a class="mobile-menu-header__back__text" onmousedown="menuService.menuBackOneLevel()">
+                                <i class="fas fa-chevron-left mobile-menu-header__back__icon"></i>
+                                Back
+                            </a>
+                        </div>
+
+                        <div class="mobile-menu-header__close">
+                            <a onmousedown="menuService.closeMobileMenu()">
+                                <i class="fa-solid fa-x mobile-menu-header__close__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-slider__inner">
+                        <!-- content that should always be visible -->
+                        <div class="menu-slider__centered_content">
+                            <!-- yoursafe logo in bg -->
+                            <img class="mobile-menu-background-image" src="../images.v2/yoursafe-app-icon.svg">
+
+                            <!-- FOOTER -->
+                            <div class="mobile-menu-footer">
+                                <a href="https://accounts.bitsafe.com/account/login">
+                                    <i class="fa fa-user"></i> Sign in
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-menu mobile-menu__level-1">
+                            <!-- menu link items -->
+
+                            <li id="you" class="mobile-menu-item item-id-you main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    You
+                                    <!-- Only add chevron if the item has children -->
+                                    <i class="chevron-align-right fas fa-chevron-right"></i>
+                                </a>
+                                <!-- Render submenu if the item has children -->
+                                <ul class="mobile-menu mobile-menu__level-2">
+                                    <!-- menu link items -->
+
+                                    <li id="you-you" class="mobile-menu-item item-id-you-you ">
+                                        <a href="index.html" aria-current="page" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/YOU-icon.svg">
+                                            YOU
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-ibans" class="mobile-menu-item item-id-you-ibans  ">
+                                        <a href="ibans.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/account-number-icon.svg">
+                                            IBANs
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-yoursafe-app" class="mobile-menu-item item-id-you-yoursafe-app  ">
+                                        <a href="yoursafeapp.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/yoursafe-app-icon.svg">
+                                            Yoursafe App
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-betaalkaart" class="mobile-menu-item item-id-you-betaalkaart  ">
+                                        <a href="betaalkaart.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/debit-card-icon.svg">
+                                            Betaalkaart
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="you-prijsoverzicht" class="mobile-menu-item item-id-you-prijsoverzicht  ">
+                                        <a href="prijsoverzicht-you.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                            Prijsoverzicht
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="adverteren"
+                                class="mobile-menu-item item-id-adverteren  main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    Adverteren
+                                    <!-- Only add chevron if the item has children -->
+                                    <i class="chevron-align-right fas fa-chevron-right"></i>
+                                </a>
+                                <!-- Render submenu if the item has children -->
+                                <ul class="mobile-menu mobile-menu__level-2">
+                                    <!-- menu link items -->
+
+                                    <li id="adverteren-yoursafe-ads"
+                                        class="mobile-menu-item item-id-adverteren-yoursafe-ads  ">
+                                        <a href="ads.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/yoursafe-ads-icon.svg">
+                                            Yoursafe Ads
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="adverteren-sponsorships"
+                                        class="mobile-menu-item item-id-adverteren-sponsorships  ">
+                                        <a href="sponsorships.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/sponsorships-icon.svg">
+                                            Sponsorships
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="adverteren-prijsoverzicht"
+                                        class="mobile-menu-item item-id-adverteren-prijsoverzicht  ">
+                                        <a href="prijsoverzicht-adverteren.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                            Tariefkaart
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="banken"
+                                class="mobile-menu-item item-id-banken  menu-item--current main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    Banken
+                                    <!-- Only add chevron if the item has children -->
+                                    <i class="chevron-align-right fas fa-chevron-right"></i>
+                                </a>
+                                <!-- Render submenu if the item has children -->
+                                <ul class="mobile-menu mobile-menu__level-2">
+                                    <!-- menu link items -->
+
+                                    <li id="banken-banken"
+                                        class="mobile-menu-item item-id-banken-banken   menu-item--current">
+                                        <a href="banken.html" class="menu-item__text">
+                                            <img class="menu-item__icon" src="../images.v2/banks-icon.svg">
+                                            Banken
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                    <li id="banken-transactie-informatie"
+                                        class="mobile-menu-item item-id-banken-transactie-informatie  ">
+                                        <a href="transactie-informatie.html" class="menu-item__text">
+                                            <img class="menu-item__icon"
+                                                src="../images.v2/transactions-questions-icon.svg">
+                                            Transactie-informatie
+                                            <!-- Only add chevron if the item has children -->
+
+                                        </a>
+                                        <!-- Render submenu if the item has children -->
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="over-ons"
+                                class="mobile-menu-item item-id-over-ons  main-menu-item--without-3rd-level">
+                                <a class="menu-item__text">
+
+                                    Over Ons
+                                    <!-- Only add chevron if the item has children -->
+
+                                </a>
+                                <!-- Render submenu if the item has children -->
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- desktop view: -->
+
+            <div class="desktop-menu-svg-line&quot;">
+                <svg id="stroke" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+                    <defs>
+                        <path id="line"
+                            d="M2 2c49.7 2.6 100 3.1 150 1.7-46.5 2-93 4.4-139.2 7.3 45.2-1.5 90.6-1.8 135.8-.6"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round"
+                            vector-effect="non-scaling-stroke"></path>
+                    </defs>
+                </svg>
+            </div>
+
+            <ul id="desktop-menu" class="menu menu__level-1">
+                <!-- menu link items -->
+
+                <li class="main-menu-item main-menu-item--you item-id-you main-menu-item--without-3rd-level">
+                    <a class="main-menu-item__text">You</a>
+                    <div class="submenu__container">
+                        <div class="submenu__inner">
+                            <ul class="menu__level-2">
+
+                                <li class="menu-item item-id-you-you">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/YOU-icon.svg">
+                                        <a aria-current="page" href="index.html" class="menu-item__text">YOU</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-ibans ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/account-number-icon.svg">
+                                        <a href="ibans.html" class="menu-item__text">IBANs</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-yoursafe-app ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/yoursafe-app-icon.svg">
+                                        <a href="yoursafeapp.html" class="menu-item__text">Yoursafe App</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-betaalkaart ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/debit-card-icon.svg">
+                                        <a href="betaalkaart.html" class="menu-item__text">Betaalkaart</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-you-prijsoverzicht ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                        <a href="prijsoverzicht-you.html" class="menu-item__text">Prijsoverzicht</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="main-menu-item main-menu-item--adverteren item-id-adverteren  main-menu-item--without-3rd-level">
+                    <a class="main-menu-item__text">Adverteren</a>
+                    <div class="submenu__container">
+                        <div class="submenu__inner">
+                            <ul class="menu__level-2">
+
+                                <li class="menu-item item-id-adverteren-yoursafe-ads ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/yoursafe-ads-icon.svg">
+                                        <a href="ads.html" class="menu-item__text">Yoursafe Ads</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-adverteren-sponsorships ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/sponsorships-icon.svg">
+                                        <a href="sponsorships.html" class="menu-item__text">Sponsorships</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-adverteren-prijsoverzicht ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/pricechart-icon.svg">
+                                        <a href="prijsoverzicht-adverteren.html" class="menu-item__text">Tariefkaart</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="main-menu-item main-menu-item--banken item-id-banken  menu-item--current main-menu-item--without-3rd-level">
+                    <a class="main-menu-item__text">Banken</a>
+                    <div class="submenu__container">
+                        <div class="submenu__inner">
+                            <ul class="menu__level-2">
+
+                                <li class="menu-item item-id-banken-banken  menu-item--current">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/banks-icon.svg">
+                                        <a href="banken.html" class="menu-item__text">Banken</a>
+                                    </div>
+
+                                </li>
+                                <li class="menu-item item-id-banken-transactie-informatie ">
+                                    <div class="menu-item__inner">
+                                        <img class="menu-item__icon" src="../images.v2/transactions-questions-icon.svg">
+                                        <a href="transactie-informatie.html"
+                                            class="menu-item__text">Transactie-informatie</a>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="main-menu-item main-menu-item--without-submenu main-menu-item--over-ons item-id-over-ons  main-menu-item--without-3rd-level">
+                    <a href="over-ons.html" class="main-menu-item__text">Over Ons</a>
+                </li>
+
+                <!--login menu link item -->
+                <li class="main-menu-item main-menu-item--without-submenu main-menu-item--login">
+                    <a href="https://accounts.bitsafe.com/account/login" target="_blank">
+                        <i class="fa fa-user main-menu-item__text"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero hero--no-bg-flex-padding">
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <div class="col-md-6 hero__text text--white">
+                    <h1 class="text--white">Wie en wat is Yoursafe?</h1>
+                    <p class="intro">
+                        Yoursafe B.V. (Yoursafe) is een besloten vennootschap met beperkte aansprakelijkheid, opgericht
+                        volgens de Nederlandse wetgeving. Yoursafe is gevestigd in Amsterdam, Nederland, en
+                        geregistreerd bij de Kamer van Koophandel onder nummer: 34180575.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="block block--padding-low-top block--purple block--who-and-what-is-ys">
+        <div class="wave wave--purple wave--flip-x wave--top wave--height-flex">
+            <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1919 208">
+                <path class="shape-fill"
+                    d="M0.175,207.968C0.175,207.968 356.095,5.388 734.785,9.301C1040.45,12.46 1208.23,115.31 1593.28,121.141C1694.74,122.677 1869.69,91.232 1918.94,41.356L1918.9,0.586L0.669,-0.326L0.175,207.968Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Yoursafe is erkend als elektronischgeldinstelling (EGI) door De Nederlandsche Bank N.V. en als
+                        zodanig geregistreerd in het EGI-register van De Nederlandsche Bank onder nummer F00025.
+                    </p>
+                    <p>
+                        Yoursafe is lid van de Society for Worldwide Interbank Financial Telecommunication (SWIFT) en
+                        verstrekt IBAN-rekeningen aan zijn klanten onder Business Identifier Code (BIC): YOURNL2A.
+                        Yoursafe is ook lid van de Nederlandse Betaalvereniging. Yoursafe is geregistreerd bij, en houdt
+                        zich aan, het SEPA Credit Transfer (SCT) Schema van de European Payment Council (EPC). De
+                        procedures, processen en systemen van Yoursafe worden jaarlijks geaudit door externe auditors om
+                        PCI Level 1 compliance te waarborgen en te behouden.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="block block--padding-low block--we-are-an-emi block--blue-alt-light">
+        <div class="wave wave--blue-alt-light wave--flip-x wave--top wave--height-flex">
+            <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1919 208">
+                <path class="shape-fill"
+                    d="M0.175,207.968C0.175,207.968 356.095,5.388 734.785,9.301C1040.45,12.46 1208.23,115.31 1593.28,121.141C1694.74,122.677 1869.69,91.232 1918.94,41.356L1918.9,0.586L0.669,-0.326L0.175,207.968Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text--white">
+                    <h2>
+                        Wij zijn een elektronischgeldinstelling
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text--white">
+                    <p>
+                        Yoursafe is een EGI die opereert in lijn met de hoofddoelstellingen van de Richtlijn
+                        Betalingsrekeningen (Richtlijn 2014/92/EU van het Europees Parlement en de Raad van 23 juli
+                        2014) (PAD). PAD maakt de kosten van het gebruik van betaalrekeningen transparanter voor
+                        Europese consumenten en maakt het gemakkelijker om van betaalrekeningaanbieder te wisselen. Het
+                        zorgt ervoor dat Europese burgers toegang hebben tot een betaalrekening met basisfuncties. Het
+                        uitgeven van basisbetaalrekeningen is niet langer het exclusieve domein van traditionele banken.
+                    </p>
+                </div>
+                <div class="col-md-6 text--white">
+                    <p>
+                        Concreet betekent dit dat erkende elektronischgeldinstellingen bevoegd zijn om
+                        IBAN-betaalrekeningen uit te geven. Een IBAN-betaalrekening geopend bij een
+                        elektronischgeldinstelling is een volwaardig alternatief voor een bankrekening. De rekeningen
+                        zijn gekoppeld aan het Eurosysteem van de Europese Centrale Bank (ECB). SEPA Credit Transfers
+                        (SCT) en Instant SEPA Credit Transfers (Instant SCT) worden in realtime geautoriseerd en
+                        afgewikkeld via TARGET2 en TARGET2 Instant Payment System (TIPS).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block block--our-authorized-services">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-md-4 col-md-8">
+                    <h2 class="text--purple-dark text--bold">Our authorized services</h2>
+                    <p>
+                        As stipulated and further detailed in the directive of the European
+                        Parliament and of the Council on 25 November 2015 on payment services in the internal market
+                        (Section 4.3 jo. Annex I) (PSD2), a licensed electronic money institution, is authorized to
+                        provide
+                        the
+                        following services:
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-md-2 col-md-12">
+                    <div class="blob blob--blue-alt-transparent mb-4">
+                        <ol class="inner">
+                            <li>
+                                Services enabling cash to be placed on a payment account as well
+                                as all the operations required for operating a payment account.
+                            </li>
+                            <li>
+                                Services enabling cash withdrawals from a payment account as
+                                well as all the operations required for operating a payment
+                                account.
+                            </li>
+                            <li>
+                                Execution of payment transactions, including transfers of funds on
+                                a payment account with the user&rsquo;s payment service provider or
+                                with another payment service provider: (a) execution of direct
+                                debits, including one-off direct debits; (b) execution of payment
+                                transactions through a payment card or a similar device; (c)
+                                execution of credit transfers, including standing orders.
+                            </li>
+                            <li>
+                                Execution of payment transactions where the funds are covered
+                                by a credit line for a payment service user (a) execution of direct
+                                debits, including one-off direct debits; (b) execution of payment
+                                transactions through a payment card or a similar device; (c)
+                                execution of credit transfers, including standing orders.
+                            </li>
+                            <li>
+                                Issuing of payment instruments and/or acquiring of payment
+                                transactions.
+                            </li>
+                            <li>
+                                Money remittance.
+                            </li>
+                            <li>
+                                Payment initiation services.
+                            </li>
+                            <li>
+                                Account information services.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col offset-md-4 col-md-8">
+                    <p>
+                        Contrary to (most) traditional banks, electronic money institutions are not authorized to act as
+                        credit institutions. Therefore, an electronic money institution does not engage in lending out
+                        (electronic) money
+                        to its customers. In addition, Yoursafe in particular does not handle cash money, it only
+                        engages in
+                        providing products and services related to electronic money. Third party funds of electronic
+                        money
+                        institutions are safeguarded in accordance with the European Financial Supervisory legislative
+                        framework. In short, this means that customer funds are
+                        segregated from company &ndash; or other &ndash; funds.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wave wave--white wave--bottom wave--inner wave--flip-z wave--height-90">
+            <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1919 208">
+                <path class="shape-fill"
+                    d="M0.175,207.968C0.175,207.968 356.095,5.388 734.785,9.301C1040.45,12.46 1208.23,115.31 1593.28,121.141C1694.74,122.677 1869.69,91.232 1918.94,41.356L1918.9,0.586L0.669,-0.326L0.175,207.968Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="block block--financial-services-provided">
+
+
+        <div class="wave wave--white wave--top wave--inner wave--flip-y wave--height-90">
+            <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="10 10 1919 208">
+                <path class="shape-fill"
+                    d="M 2277.5 0 C 2277.5 0 2352 75 2359.5 110 C 2309.83 129.833 2114.81 170.235 1849 181 C 1528 194 1188 68 711 36 C 146 -10 69 33 -0.0001 157.5 C -40.0001 151.5 -0.0001 0 -0.0001 0 H 2277.5 Z M 2277.5 0 C 2731 -3 2755 -6 2601 40 C 2309.83 129.833 2114.81 170.235 1849 181 C 1349 183 1272 82 739 40 C 290 1 9 11 6 176 C -82 152 -0.0001 0 -0.0001 0 H 2277.5 Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-5 col-md-7 text--white">
+                    <h2>
+                        The financial services
+                        we provide
+                    </h2>
+                    <p>
+                        At present, Yoursafe provides: (i) merchant processing services, and (ii) products and services
+                        related to &ndash; the issuance of basic payment accounts. The merchant processing activities
+                        consist of
+                        accepting,
+                        collecting and distributing electronic funds from merchant&rsquo;s end-users on behalf of
+                        &ndash; and to &ndash;
+                        merchants (Merchants), and providing risk
+                        management and customer support services to Merchants (Merchant Processing Services). The
+                        products
+                        and services related to the issuance of basic payment accounts and debit cards consist of
+                        issuing
+                        basic payment accounts to individuals and businesses, issuing debit cards
+                        to individuals and processing electronic payments related to such products (Basic Payment
+                        Account
+                        Services).
+                    </p>
+                    <h2 class="mt-6">
+                        Operating in line with Payment Services Directive (PSD2)
+                    </h2>
+                    <p>
+                        As further stipulated in PSD2, electronic money institutions are required to apply strong
+                        customer
+                        authentication (SCA) where users access payment accounts online, initiate electronic payment
+                        transactions or carry out any action through a remote channel which may imply a risk
+                        of payment fraud or other abuse (for example, setting up a new payee).
+                        In addition to applying the appropriate level of SCA in its services, Yoursafe is compliant with
+                        the
+                        Payment Card Industry Data Security
+                        Standards (PCI DSS) and certified as level 1 compliant. Prevention of fraud, money laundering,
+                        finance of terrorism and sanction violations similar to banks &ndash; and other financial
+                        institutions &ndash;
+                        electronic money
+                        institutions are subject to the European anti-money laundering and counter terrorist finance
+                        (AML/CTF) and sanctions framework.
+                    </p>
+                    <p>
+                        Yoursafe gives substance to these requirements by administering adequate measures in terms of
+                        customer due diligence (KYC) and by strictly monitoring all transactions to and from Yoursafe
+                        payment accounts. Yoursafe is one of the few financial institutions that uses a pre-transaction
+                        monitoring engine for national and international payments, whereby payment transactions between
+                        IBAN
+                        accounts can be temporarily put on hold for further investigation. This transaction is a
+                        monitoring
+                        engine that is a self-learning artificial intelligence system.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wave wave--bottom wave--inner wave--blue-dark wave--flip-x wave--no-height">
+            <svg width="116" height="5" viewBox="0 0 116 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H116V5C39 -2.5 16 1 0 0.999997V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="block block--dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-8">
+                    <h2 class="text--white">
+                        Our risk profile
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 text--white">
+                    <p>
+                        Despite the efforts of the EU, one of the challenges that European consumers (still) face are
+                        (high
+                        costs of) access to-, opening and maintaining a basic payment account. Yoursafe focuses on
+                        developing competitive products and services that are accessible for customers worldwide, in the
+                        broadest sense of the word. This
+                        inevitably means that Yoursafe's risk profile differs from traditional banks and service
+                        providers.
+                        Legislation related to such risks continues to evolve within the EU and abroad. Most notably,
+                        sanction regulation, and the EU directive(s) related to the prevention of money
+                        laundering and finance of terrorism. Most notably,
+                        the fourth anti-money laundering directive (AMLD4),
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 text--white">
+                    <p>
+                        recently strengthened by the fifth anti-money laundering directive (AMLD5) and the sixth
+                        anti-money
+                        laundering directive (AMLD6). Important features of AMLD6 include a stricter definition of the
+                        concept of money laundering. Yoursafe has constructed its AML/CTF framework around a risk-based
+                        approach, and implemented an intelligent mix of in-house developed software and
+                        automation combined with third-party services. Within the automated approach, Yoursafe retains a
+                        four-eyes principle in its customer onboarding and transaction monitoring procedures to prevent
+                        errors,
+                        non-compliance and/or unintended discrimination through automation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wave wave--white wave--bottom wave--inner wave--flip-z wave--height-90">
+            <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1919 208">
+                <path class="shape-fill"
+                    d="M0.175,207.968C0.175,207.968 356.095,5.388 734.785,9.301C1040.45,12.46 1208.23,115.31 1593.28,121.141C1694.74,122.677 1869.69,91.232 1918.94,41.356L1918.9,0.586L0.669,-0.326L0.175,207.968Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="block block--mitigate-risk">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text--turquoise">
+                        How we mitigate risk
+                    </h2>
+                    <p>
+                        Yoursafe implements both customer due diligence (KYC) and transaction monitoring measures to
+                        mitigate
+                        and manage the risks associated with its business. Such measures consist of self-learning,
+                        automated
+                        procedures and processes developed by Yoursafe, as well as
+                        non-automated procedures. Third-party fraud-, AML-,
+                        CTF- and sanction detection and prevention services (inter alia Relian and GBG) are integrated
+                        within the software infrastructure. Yoursafe accepts both private persons and businesses as
+                        customers. Politically Exposed Persons (PEPs) are not accepted as customers. Onboarding
+                        restrictions
+                        are also in place regarding (sanctioned) countries, transactions, persons and
+                        organizations. All customers are individually identified, and submitted documentation is
+                        verified in
+                        accordance with commonly accepted standards of verification. Identity documentation of private
+                        persons is verified through the Yoursafe App. The software within the app recognizes, and
+                        accepts
+                        over 1,600 different formal means of identification. In addition, customers are checked against
+                        more
+                        than 27 different sanction lists, both during the onboarding phase and on a continuous (daily)
+                        basis
+                        throughout the entire business relationship.
+                    </p>
+                </div>
+                <div class="offset-3 offset-md-0 col-6 mt-4">
+                    <div class="image__wrapper h-100">
+                        <img class="image image--large" src="../images.v2/phone-lady-checkbox.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="block block--yoursafe-governance">
+        <div class="wave wave--white wave--top wave--inner wave--flip-xy wave--height-90">
+            <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="10 10 1919 208">
+                <path class="shape-fill"
+                    d="M 2277.5 0 C 2277.5 0 2352 75 2359.5 110 C 2309.83 129.833 2114.81 170.235 1849 181 C 1528 194 1188 68 711 36 C 146 -10 69 33 -0.0001 157.5 C -40.0001 151.5 -0.0001 0 -0.0001 0 H 2277.5 Z M 2277.5 0 C 2731 -3 2755 -6 2601 40 C 2309.83 129.833 2114.81 170.235 1849 181 C 1349 183 1272 82 739 40 C 290 1 9 11 6 176 C -82 152 -0.0001 0 -0.0001 0 H 2277.5 Z">
+                </path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text--white">
+                        Yoursafe&rsquo;s governance
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text--white">
+                        Yoursafe has a Management Board, Supervisory Board and Advisory Board. The Management Board
+                        develops
+                        and executes the Yoursafe strategy, and manages the company on a day-to-day basis. The
+                        Supervisory
+                        Board monitors the execution of the company policy and advises the Management Board. Yoursafe
+                        recognizes that there are risks associated with achieving its strategy and business objectives.
+                        Managing these risks are
+                        integrated and an essential part of the company&rsquo;s business proposal. To that effect, the
+                        Management
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text--white">
+                        Board has adopted a uniform and systematic approach for managing risks. The Yoursafe&rsquo;s
+                        compliance
+                        risk
+                        mitigation focuses on: (i) maintaining the integrity of
+                        the company and the financial industry as a whole;
+                        (ii) preventing fraud, money laundering, the finance
+                        of terrorism and sanction violations; (iii) information security, privacy and data protection,
+                        and
+                        (iv) maintaining the company&rsquo;s financial stability
+                        and safeguarding of third-party funds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block block--questions-about-transaction">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Questions about a transaction?
+                    </h2>
+                    <p>
+                        If you are a receiving financial institution and you have received a transaction under a
+                        different
+                        name than is known within your KYC systems, you may have stumbled upon a Yoursafe Alias
+                        transaction.
+                    </p>
+                    <p>
+                        Yoursafe Alias is a key feature in Yoursafe&rsquo;s innovative private payments service that
+                        bridges the
+                        gap between an
+                        individual&rsquo;s right to identity privacy and the need to adhere to strict global financial
+                        regulations
+                        and practices at all times. Yoursafe&rsquo;s mission is to secure payments, money and other
+                        digital assets
+                        for people, independent of their trade, profession, race, ethnic or social origin, gender,
+                        religion
+                        or sexual identity.
+                    </p>
+                    <p>
+                        We check and verify the true identities of individuals and business account holders and their
+                        identification
+                        documents using:
+                    </p>
+
+                    <ul>
+                        <li>Biometric face-matching imaging</li>
+                        <li>NFC technology on the latest mobiles for identification documents with the NFC chip</li>
+                        <li>Four-eyes principle</li>
+                        <li>Screening against sanction and Politically Exposed Person (PEP) lists.</li>
+                    </ul>
+                    <p>
+                        Yoursafe accepts <a href="" class="text--link">more than 1700 types of identification
+                            document</a>.
+                    </p>
+                    <p>
+                        Yoursafe uses a variety of sanction lists to verify users: the EU sanction list, the UN sanction
+                        list, the US sanction list and the UK sanction list.
+                    </p>
+                    <p>
+                        Yoursafe does not allow any Yoursafe YOU account holder to be a PEP, or direct family member
+                        thereof.
+                    </p>
+                    <p>
+                        The Yoursafe Alias is identified with an Account ID. You can find this in the description of the
+                        transaction. It looks like this: Alias: ABC123.yoursafe.id.
+                    </p>
+                    <p>
+                        The Yoursafe Alias is a fully qualified domain name that can be visited in a browser, or by
+                        using
+                        DNS technology, in order to obtain non-personal information of this individual.
+                    </p>
+                    <p>
+                        Are you the receiving financial institution and do you need more info? Then <a href=""
+                            class="text--link">click
+                            here</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wave wave--footer">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 order-2 order-md-1">
+                    <ul class="footer__menu">
+                        <li class="footer__item">
+                            <a href="faq.html" target="_blank" class="footer__link text--white">Frequently Asked
+                                Questions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="jobs.html" target="_blank" class="footer__link text--white">Jobs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="terms-and-conditions.html" target="_blank" class="footer__link text--white">Terms
+                                and Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="privacy-policy.html" target="_blank" class="footer__link text--white">Privacy
+                                Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="debitcard-tc.html" target="_blank" class="footer__link text--white">Debit Card
+                                Terms and Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tell-a-friend-tc.html" target="_blank"
+                                class="footer__link text--white">Tell-a-Friend Terms and Conditions</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="yoursafe-complaints-procedure.html" target="_blank"
+                                class="footer__link text--white">Yoursafe Complaints Procedure</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="yoursafe-vision col-md-7 mb-5 mb-md-0 order-1 order-md-2 d-md-flex align-items-md-end">
+                    <h3 class="yoursafe-vision__text text--regular text--white text--medium mt-0 mb-0">
+                        <span class="text--blue">Yoursafe's vision is to</span> lead the world's transition to
+                        financial and online inclusion for everyone.
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text--white mt-5">
+                        <small class="mb-2">
+                            Yoursafe is a registered trade name of Yoursafe B.V., an Electronic Money
+                            Institution regulated and supervised by the Dutch Central Bank.
+                        </small>
+                        <small class="text--translucent">
+                            2024 &copy; All rights reserved, Yoursafe- Netherlands.
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="../js/back-to-top.js"></script>
+    <!-- todo:: add scrollTo function -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/detectmobilebrowser.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
