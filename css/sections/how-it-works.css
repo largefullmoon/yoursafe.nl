@@ -1,0 +1,36 @@
+.how-it-works{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.how-it-works-shape{
+    width: 50%;
+    background-image: url("../../images.v2/how-it-works-shape.png");
+    background-size: 100% 100%;
+    margin: auto;
+    padding-top: 2.4rem;
+    padding-bottom: 0.9rem;
+    padding-left: 3.9rem;
+}
+.how-it-works .how-it-works-shape h2{
+    color: var(--ys-mint);
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.how-it-works .how-it-works-shape h2:first{
+    margin-bottom: 1rem;
+}
+
+.how-it-works .opportunities{
+    margin-top: 5rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.how-it-works .opportunities p{
+    font-size: 2rem;
+    font-weight: 600;
+
+}

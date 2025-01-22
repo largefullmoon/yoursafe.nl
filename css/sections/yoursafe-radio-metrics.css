@@ -1,0 +1,55 @@
+.yoursafe-radio-metrics .results-without-nmo{
+    font-size: 4rem;
+    
+    background-image: url("../../images.v2/radio-metric-shape.png");
+    background-size: 100% 100%;
+    width: 80%;
+    padding-left: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+.yoursafe-radio-metrics{
+  
+
+
+    padding: 11rem;
+    /* background-image: url(../../images.v2/radio-metric-bg-shape.png);
+    background-size: cover;
+    padding: 11rem;
+    background-position-y: -369px; */
+}
+.yoursafe-radio-metrics .background-shape{
+    background-color: var(--ys-lime-lighter);
+    clip-path: polygon(0% 33%, 100% -7%, 100% 100%, 0% 100%)
+}
+.yoursafe-radio-metrics .dark-background-shape{
+    width: 55%;
+    background-color: #adc364;
+    height: 28rem;
+    clip-path: polygon(0% 33%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+    transform: scaleX(-1);
+}
+.yoursafe-radio-metrics .results-without-nmo h2{
+    margin-bottom: 0px;
+}
+.yoursafe-radio-metrics .yoursafe-impact-measurement{
+    width: 55%;
+    margin-top: 3rem;
+}
+.yoursafe-radio-metrics .yoursafe-impact-measurement p{
+    font-size: 2rem;
+    font-weight:500;
+}
+.yoursafe-radio-metrics .yoursafe-impact-measurement p:nth-of-type(1){
+    margin-bottom: 6rem;
+}
+.yoursafe-radio-metrics .container-fixed {
+    z-index: 10;
+}
+.yoursafe-radio-metrics .girl-down-image{
+    bottom: -16rem;
+    right: -5%;
+    width: 50%;
+    z-index: 10;
+}

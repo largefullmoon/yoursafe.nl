@@ -1,0 +1,76 @@
+.yousafe-radio-section h2{
+    font-size: 3rem;
+    color: var(--ys-violet);
+    margin-bottom: 0px;
+}
+.yousafe-radio-section .radio-shape{
+    padding-left: 3.3rem;
+    padding-top: 2.06rem;
+    margin-top: 3.75rem;
+}
+.yousafe-radio-section .radio-description{
+    margin-top: 4.875rem;
+    background-color: var(--ys-zalm-light);
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+            
+}
+.yousafe-radio-section .radio-description h4{
+    font-size: 1.8125rem;
+    color: var(--ys-violet);
+    font-weight: 600;
+    line-height: 2.0625rem;
+}
+.met-radio-section{
+    background-image: url(../../images.v2/spons/green.png);
+    background-size: cover;
+    margin-top: -190px;
+    /* padding-bottom: 15rem; */
+}
+.met-radio-section .radio-waves{
+    margin-top: -75px;
+    z-index: 100;
+}
+.met-radio-section .reach-genz{
+    margin-top: 20rem;
+    width: 45%;
+    margin-left: auto;
+    background-image: url('../../images.v2/spons/Group 1.png');
+    background-size: 100% 100%;
+    padding-left: 8rem;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    /* position: absolute; width: 40%; right: 0; top: 350px */
+}
+.met-radio-section .reach-genz h2{
+    color: var(--ys-lime-lighter);
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+.met-radio-section .yoursafe-sponsorship{
+    background-color: #7d98de;
+    font-size: xx-large;
+    border-radius: 20px;
+    color: #e2f3a7;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    padding: 2.5rem;
+}
+.met-radio-section .yoursafe-sponsorship .sponsorship-description{
+    font-size: 1.8125rem;
+    margin-bottom: 5.9375rem;
+}
+.met-radio-section  .sponsorship-list{
+    font-size: 1.8125rem;
+    color: var(--ys-lime-lighter);
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+.met-radio-section  .sponsorship-list li{
+    margin-bottom: 3rem;
+    font-weight: bold;
+
+}

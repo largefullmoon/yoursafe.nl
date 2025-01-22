@@ -1,0 +1,161 @@
+/* Positioning */
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* Top, Right, Bottom, Left */
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.top-1 {
+  top: 0.25rem; /* 4px */
+}
+
+.right-1 {
+  right: 0.25rem; /* 4px */
+}
+
+.bottom-1 {
+  bottom: 0.25rem; /* 4px */
+}
+
+.left-1 {
+  left: 0.25rem; /* 4px */
+}
+
+.top-2 {
+  top: 0.5rem; /* 8px */
+}
+
+.right-2 {
+  right: 0.5rem; /* 8px */
+}
+
+.bottom-2 {
+  bottom: 0.5rem; /* 8px */
+}
+
+.left-2 {
+  left: 0.5rem; /* 8px */
+}
+
+/* More spacing */
+.top-4 {
+  top: 1rem; /* 16px */
+}
+.right-4 {
+  right: 1rem; /* 16px */
+}
+.bottom-4 {
+  bottom: 1rem; /* 16px */
+}
+.left-4 {
+  left: 1rem; /* 16px */
+}
+
+.top-8 {
+  top: 2rem; /* 32px */
+}
+.right-8 {
+  right: 2rem; /* 32px */
+}
+.bottom-8 {
+  bottom: 2rem; /* 32px */
+}
+.left-8 {
+  left: 2rem; /* 32px */
+}
+
+/* Centering */
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.inset-x-0 {
+  left: 0;
+  right: 0;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.inset-1 {
+  top: 0.25rem;
+  right: 0.25rem;
+  bottom: 0.25rem;
+  left: 0.25rem;
+}
+
+/* Auto positioning */
+.top-auto {
+  top: auto;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.bottom-auto {
+  bottom: auto;
+}
+
+.left-auto {
+  left: auto;
+}
+
+/* Z-Index */
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.z-30 {
+  z-index: 30;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
+.z-auto {
+  z-index: auto;
+}

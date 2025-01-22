@@ -1,0 +1,12 @@
+.home .three-columns .column{
+    height: 25rem;
+    width: 100%;
+    background-color: var(--ys-zalm);
+    padding: 6rem 3rem;
+    font-size: 2.4rem;
+    color: var(--ys-mint);
+    font-weight: bold;
+}
+.home .three-columns .column:nth-last-of-type(2){
+    background-color: #bb4a5d;
+}
