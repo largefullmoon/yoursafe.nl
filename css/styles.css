@@ -6373,7 +6373,7 @@ body {
 }
 
 /* HERO */
-.hero {
+/* .hero {
   position: relative;
   padding-top: 9rem;
   padding-bottom: 12rem;
@@ -6406,7 +6406,7 @@ body {
     background-size: min(108vw, 1680px);
     background-position: left calc(50% - min(12vw, 75px)) bottom;
   }
-}
+} */
 
 .hero--no-bg {
   background: none;
